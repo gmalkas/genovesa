@@ -1,0 +1,23 @@
+<ul>
+  <li>
+    <img src="icons/16/users.png" height="16" width="16"/>
+    Individus
+  </li>
+
+  <li>
+    <a href="#!/persons/by/query">
+      <img src="icons/16/magnifier.png" height="16" width="16"/>
+      Par mots-clés
+    </a>
+  </li>
+
+  {{#ifLogged}}
+  <li>
+    <a href="#!/persons/by/owner">
+      <img src="icons/16/user-silhouette.png" height="16" width="16"/>
+      Mes individus
+    </a>
+  </li>
+  {{/ifLogged}}
+
+</ul>

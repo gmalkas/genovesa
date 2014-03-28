@@ -1,0 +1,25 @@
+<li data-annotation-group="{{id}}">
+    <a href="#" data-action="toggle" class="annotation-header">{{title}} / {{author}} <span style="float:right">&#x25BC;</span></a>
+    <div class="details">
+      {{#canChange this}}
+        <a href="#" data-action="edit" class="button dark"><img src="icons/16/document--pencil.png" alt=""/>Modifier</a>
+        <a href="#" data-action="destroy" class="button dark"><img src="icons/16/cross.png" alt=""/>Supprimer</a>
+      {{/canChange}}
+
+      <ul class="tags">
+        {{#each tags}}
+          <li>{{key}} : {{value}}</li>
+        {{/each}}
+      </ul>
+
+      {{#each annotations}}
+        <ul class="annotation">
+          <li>{{role}}</li>
+          
+          {{#each tags}}
+          <li>{{key}} : {{value}}</li>
+          {{/each}}
+        </ul>
+      {{/each}}
+    </div>
+</li>

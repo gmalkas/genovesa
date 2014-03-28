@@ -1,0 +1,47 @@
+<a class="tile" href="{{baseUrl}}/{{document.id}}">
+  <header>
+    <h1>
+      <img src="icons/24/folder-horizontal.png" height="24" width="24"/>
+      {{document.reference}}
+    </h1>
+
+    {{#ifLogged}}
+      <img class="favorite-icon {{#ifFavorite document.reference}}favorited{{/ifFavorite}}" height="16" width="16"/>
+    {{/ifLogged}}
+  </header>
+  
+  <aside>
+    <ul>
+      <li>
+        <img src="icons/16/home.png" height="16" width="16"/>{{document.township.name}}
+      </li>
+      
+      <li>
+        <img src="icons/16/calendar.png" height="16" width="16"/>
+        {{#if document.singleYear}}
+          {{document.fromYear}}
+        {{else}}
+          {{document.fromYear}} à {{document.toYear}}
+        {{/if}}
+      </li>
+    </ul>
+    
+    <ul>
+      <li>
+        <img src="icons/16/book.png" height="16" width="16"/>
+        {{#lte document.documentTypes.length 1}}
+          {{#each document.documentTypes}}
+            {{name}}
+          {{/each}}
+        {{else}}
+          {{document.documentTypes.length}} types d'actes
+        {{/lte}}
+      </li>
+      
+      <li>
+        <img src="icons/16/document.png" height="16" width="16"/>
+        {{document.collectionType}}
+      </li>
+    </ul>
+  </aside>
+</a>

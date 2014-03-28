@@ -1,0 +1,113 @@
+.list-panel {
+  overflow: auto;
+  height: calc(100% - 36px);
+}
+
+.list-panel > h1 {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 6px;
+  border-bottom: 1px solid hsl(220, 33%, 90%);
+  background-color: hsl(220, 33%, 98%);
+}
+
+.tile {
+  position: relative;
+  display: inline-block;
+  margin: 16px;
+  padding: 8px;
+  width: 260px;
+}
+
+.tile:before {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  bottom: 0;
+  left: 10px;
+  z-index: -2;
+  border-radius: 100px / 10px;
+  content: "";
+}
+
+.tile:hover {
+  border-radius: 3px;
+  background-image: -moz-linear-gradient(top, #fbfbfb, #ebebeb);
+  background-image: -webkit-linear-gradient(top, #fbfbfb, #ebebeb);
+  box-shadow: 0 1px 4px #aaa, 0 0 4px #fff inset;
+  cursor: pointer;
+}
+
+.tile:hover * {
+  cursor: pointer;
+}
+
+.tile:hover:before {
+  box-shadow: 0 0 15px #666;
+}
+
+.tile:active {
+  background-image: -moz-linear-gradient(top, #f8f8f8, #e8e8e8);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #e8e8e8);
+  box-shadow: 0 1px 4px #aaa;
+}
+
+.tile:active:before {
+  bottom: 2px;
+  box-shadow: 0 0 15px #666;
+}
+
+.tile li {
+  display: block;
+}
+
+.tile header h1 {
+  display: inline-block;
+  padding: 4px 4px;
+  font-size: 15px;
+}
+
+.tile header h1 img {
+  margin-right: 8px;
+  width: 24px;
+}
+
+.favorite-icon {
+  visibility: hidden;
+  float: right;
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+  content: url('../../icons/16/star-empty.png');
+}
+
+.favorite-icon.favorited {
+  visibility: visible;
+  content: url('../../icons/16/star.png');
+}
+
+.tile:hover .favorite-icon {
+  visibility: visible;
+}
+
+.tile aside {
+  display: table;
+  padding-top: 4px;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+}
+
+.tile ul {
+  display: table-row;
+  font-size: 12px;
+}
+
+.tile ul li {
+  display: table-cell;
+  padding: 4px;
+}
+
+.tile ul li img {
+  margin: 0px 4px;
+  width: 16px;
+}

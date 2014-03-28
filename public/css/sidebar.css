@@ -1,0 +1,57 @@
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-image: linear-gradient(hsl(220, 33%, 40%), hsl(220, 33%, 50%), hsl(220, 33%, 40%));
+}
+
+#sidebar ul {
+  overflow: hidden;
+  margin: 0px 8px 20px 8px;
+  padding-bottom: 4px;
+  border: 1px solid hsl(220, 33%, 30%);
+  border-radius: 3px;
+  background: hsl(220, 33%, 99%);
+  -webkit-box-shadow: 0 3px 8px hsl(220, 33%, 30%);
+  box-shadow: 0 3px 8px hsl(220, 33%, 30%);
+  list-style-type: none;
+  font-size: 13px;
+}
+
+#sidebar ul li {
+  line-height: 16px;
+}
+
+#sidebar ul li:first-child {
+  margin-bottom: 4px;
+  padding: 4px 8px;
+  border-bottom: 1px solid hsl(220, 33%, 50%);
+  background-image: linear-gradient(hsl(220, 33%, 70%), hsl(220, 33%, 60%));
+  color: white;
+  -webkit-text-shadow: 0 1px 1px hsl(220, 33%, 35%);
+  text-shadow: 0 1px 1px hsl(220, 33%, 35%);
+  font-weight: bold;
+  line-height: 14px;
+}
+
+#sidebar ul li:not(:first-child) {
+  padding: 1px 6px;
+}
+
+#sidebar a {
+  display: block;
+  padding: 3px;
+  border: 1px solid transparent;
+}
+
+#sidebar a:hover {
+  border: 1px solid hsl(220, 33%, 75%);
+  border-radius: 3px;
+  background-image: linear-gradient(hsl(220, 33%, 95%), hsl(220, 33%, 90%));
+}
+
+#sidebar img {
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+}

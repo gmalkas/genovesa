@@ -1,0 +1,30 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+pids
+logs
+results
+
+npm-debug.log
+
+# Archived documents
+public/images/documents
+
+# Node modules
+node_modules
+
+# Compiled Javascript files
+bin/server.js
+bin/server.js.map
+public/js/genovesa.js
+public/js/genovesa.js.map
+public/js/genovesa.min.js
+public/js/genovesa.min.js.map
+public/js/genovesa.templates.js

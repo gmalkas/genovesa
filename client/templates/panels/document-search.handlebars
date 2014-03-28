@@ -1,0 +1,48 @@
+<section class="document-search-panel">
+  <section>
+    <h1>
+      Saisissez le nom de la commune
+    </h1>
+
+    <p>
+      <input type="text" name="township" id="township" list="townships" placeholder="Toutes les communes"/>
+      
+      <datalist id="townships">
+        {{#each townships}}
+          <!-- In production, replace "this" with "name" -->
+          <option value="{{this}}"></option>
+        {{/each}}
+      </datalist>
+    </p>
+  </section>
+
+  <section>
+    <h1>
+      Saisissez la période
+    </h1>
+
+    <p>
+      De
+      <input type="number" id="fromYear" name="fromYear" placeholder="Année de début"/>
+      à
+      <input type="number" id="toYear" name="toYear" placeholder="Année de fin"/>
+    </p>
+  </section>
+
+  <section>
+    <h1>
+      Sélectionnez les types d'actes
+    </h1>
+
+    {{#each documentTypes}}
+    <p>
+      <input type="checkbox" id="{{id}}" name="{{name}}" value="{{id}}" checked="true"/>
+      <label for="{{id}}">{{name}}</label>
+    </p>
+    {{/each}}
+
+    <p>
+      <input type="button" action="do-search" value="Rechercher" class="button dark"/>
+    </p>
+  </section>
+</section>

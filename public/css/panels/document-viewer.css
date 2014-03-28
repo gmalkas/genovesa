@@ -1,0 +1,168 @@
+.document-viewer-panel {
+  height: calc(100% - 36px);
+  overflow: auto;
+}
+
+.document-viewer-panel .visualizer {
+  background-color: hsl(220, 33%, 15%);
+  cursor: pointer;
+  height: 100%;
+  display: inline-block;
+  width: 80%;
+  position: relative;
+}
+
+.document-viewer-panel .annotations {
+  display: inline-block;
+  background-image: linear-gradient(hsl(220, 33%, 40%), hsl(220, 33%, 50%), hsl(220, 33%, 40%));
+  border-left: 1px solid hsl(220, 33%, 60%);
+  overflow-y: auto;
+  z-index: 3;
+  width: 20%;
+  height: 100%;
+}
+
+.document-viewer-panel .annotations header h1 {
+  color: #e1e1e1;
+  font-size: 1.5em;
+  margin: .5em;
+}
+
+.document-viewer-panel .annotations .tabs {
+  border: 1px solid hsl(220, 33%, 30%);
+  list-style-type: none;
+  font-size: 13px;
+}
+
+.document-viewer-panel .annotations .tabs li {
+  background-image: linear-gradient(hsl(220, 33%, 70%), hsl(220, 33%, 60%));
+  color: #fff;
+  display: inline-block;
+  padding: 4px 8px;
+  text-shadow: 0 1px 1px hsl(220, 33%, 35%);
+  font-weight: bold;
+  line-height: 14px;
+}
+
+.document-viewer-panel .annotations .tabs li span {
+  color: #fff;
+}
+
+.document-viewer-panel .annotations .tabs li img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.document-viewer-panel .annotations li.selected {
+}
+
+.document-viewer-panel .annotations .tab-content span, .document-viewer-panel .annotations .tab-content p {
+  color: #e1e1e1;
+  font-size: .875em;
+}
+
+.document-viewer-panel .annotations .tab-content form label {
+  color: #d1d1d1;
+  display: inline-block;
+  font-size: .875em;
+  vertical-align: baseline;
+  margin-bottom: .5em;
+}
+
+.document-viewer-panel .annotations .tab-content .field img {
+  cursor: pointer;
+  visibility: hidden;
+  vertical-align: middle;
+}
+
+.document-viewer-panel .annotations .tab-content .field:hover img {
+  visibility: visible;
+}
+
+.document-viewer-panel .annotations .tab-content hr {
+  border: none;
+  border-bottom: 1px solid hsl(220, 33%, 60%);
+  margin: .5em;
+}
+
+.document-viewer-panel .annotations .tab-content .person h1 {
+  margin-bottom: 0;
+}
+
+.document-viewer-panel .annotations .tab-content .person h1 img {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.document-viewer-panel .register-panel p {
+  margin-top: 20px;
+}
+
+.document-viewer-panel .annotations ul {
+  list-style-type: none;
+}
+
+.document-viewer-panel .annotations .annotation-groups li {
+  padding: .5em;
+}
+
+.document-viewer-panel .annotations p {
+  padding: .5em;
+}
+
+
+.document-viewer-panel .visualizer canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.document-viewer-panel .groups li {
+  margin: 8px;
+}
+
+.details a {
+  display: inline-block;
+  margin: 4px;
+
+}
+
+.document-viewer-panel .groups li .details {
+  display: none;
+}
+
+.document-viewer-panel .groups li.toggle .details {
+  display: block;
+  background: hsl(220, 33%, 99%);
+  border: 1px solid hsl(220, 33%, 30%);
+  border-radius: 3px;
+  font-size: 13px;
+  
+    box-shadow: 0 3px 8px hsl(220, 33%, 30%);
+}
+
+.annotation-header {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid hsl(220, 33%, 30%);
+  background-image: linear-gradient(hsl(220, 33%, 70%), hsl(220, 33%, 60%));
+  text-shadow: 0 1px 1px hsl(220, 33%, 35%);
+  font-weight: bold;
+  line-height: 14px;
+  padding: 8px;
+  color: white;
+  font-size: 13px;
+  
+    box-shadow: 0 3px 8px hsl(220, 33%, 30%);
+}
+
+.annotation {
+  margin: 4px;
+  border-top: 1px solid hsl(220, 33%, 70%);
+}
+
+.annotation li:first-child {
+  font-weight: bold;
+  font-size: 14px;
+}

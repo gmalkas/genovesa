@@ -1,0 +1,30 @@
+.document-search-panel {
+}
+
+.document-search-panel section h1 {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 6px;
+  border-bottom: 1px solid hsl(220, 33%, 90%);
+  background-color: hsl(220, 33%, 98%);
+}
+
+.document-search-panel section p {
+  font-size: 13px;
+  margin: 16px;
+  vertical-align: middle;
+}
+
+.document-search-panel label {
+  line-height: 13px;
+  margin-left: 6px;
+}
+
+.document-search-panel input[type="text"] {
+  width: 260px;
+}
+
+.document-search-panel input[type="number"] {
+  vertical-align: middle;
+  margin: 0 8px;
+}

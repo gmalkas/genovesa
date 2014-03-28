@@ -1,0 +1,14 @@
+<div class="property">
+  <div class="property-header">
+    <p>
+      {{ name }}
+    </p>
+  </div>
+  <div class="property-content">
+    <p>
+      {{#each references}}
+          <span>{{value}} <a href="#!/documents/by/id/{{annotationGroup.document.id}}/{{annotationGroup.pageNumber}}/{{annotationGroup.id}}"><img src="icons/16/sticky-note-small.png" data-annotation-group="{{annotationGroup}}" title="Annoté le 25/08/2013" alt="Accéder à l'annotation" /></a></span>
+      {{/each}}
+    </p>
+  </div>
+</div>

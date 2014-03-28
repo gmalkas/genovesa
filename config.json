@@ -1,0 +1,8 @@
+{
+  "port": 6670,
+  "database": "mongodb://localhost/genovesa",
+  "enable_compress": false,
+  "authentication_required": false,
+  "manual_account_validation": false,
+  "enabled_csrf_guard": false
+}

@@ -1,0 +1,16 @@
+{
+  "name": "genovesa",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+	"build": "node bin/build.js",
+    "start": "node bin/server.js"
+  },
+  "dependencies": {
+    "typescript": "x",
+    "express": "x",
+    "mongoose": "x",
+    "uglify-js": "x",
+    "handlebars": "x"
+  }
+}

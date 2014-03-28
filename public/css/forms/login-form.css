@@ -1,0 +1,70 @@
+﻿#form-host .dialog-background .login-dialog {
+  display: table;
+  margin: auto;
+  padding: 1em;
+  border: 2px solid #333;
+  border-radius: 7px;
+  background: #fbfbfb;
+  -webkit-box-shadow: 0 0 6px #2b2b2b;
+  box-shadow: 0 0 6px #2b2b2b;
+}
+
+.login-form p {
+  margin: 1em;
+  font-size: 1em;
+}
+
+.login-dialog > p {
+  margin: 1em;
+  text-wrap: normal;
+  font-size: .875em;
+}
+
+.login-form input[type=checkbox] {
+  vertical-align: middle;
+}
+
+.login-form label {
+  font-size: .875em;
+}
+
+.login-form input[type=text], .login-form input[type=password] {
+  width: 25em;
+  height: 2em;
+  border-radius: 2px;
+  background: #e5e5e5;
+  color: #2b2b2b;
+  text-indent: 12px;
+  font-size: 1em;
+}
+
+.login-form input[type=text]:focus, .login-form input[type=password]:focus {
+  outline: none;
+  border: none;
+  background: #ccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.login-dialog hr {
+  margin: 2em auto;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: rgba(255, 255, 255, .1);
+  background-image: -moz-linear-gradient(right, rgba(255, 255, 255, 0), #ccc, rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(right, rgba(255, 255, 255, 0), #ccc, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0), #ccc, rgba(255, 255, 255, 0));
+  background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), #ccc, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ccc, rgba(255, 255, 255, 0));
+}
+
+.login-form .errors {
+  color: red;
+  font-size: .875em;
+}
+
+.login-form .form-actions {
+  margin-bottom: 0;
+  text-align: right;
+}

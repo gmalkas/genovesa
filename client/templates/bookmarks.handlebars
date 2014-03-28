@@ -1,0 +1,18 @@
+<ul>
+  <li>
+    <img src="icons/16/star.png" height="16" width="16"/>
+    Favoris
+  </li>
+  
+  {{#ifLogged}}
+  {{#each bookmarks}}
+  <li>
+    <a href="{{path}}"><img src="icons/16/folder-horizontal.png" height="16" width="16"/>{{name}}</a>
+  </li>
+  {{/each}}
+  {{else}}
+  <li>
+    <p>Connectez-vous pour ajouter des favoris !</p>
+  </li>
+  {{/ifLogged}}
+</ul>

@@ -1,0 +1,13 @@
+<section class="list-panel">
+  <h1>
+    {{#eq items.length 0}}
+      Aucun élément ne correspond à vos critères.
+    {{else}}
+      {{#eq items.length 1}}
+        1 élément correspond à vos critères.
+      {{else}}
+        {{items.length}} éléments correspondent à vos critères.
+      {{/eq}}
+    {{/eq}}
+  </h1>
+</section>

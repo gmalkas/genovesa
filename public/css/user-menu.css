@@ -1,0 +1,14 @@
+#user-menu {
+  display: inline-block;
+  float: right;
+}
+
+.loader {
+  font-size: .75em;
+  line-height: 1.5em;
+}
+
+.loader img {
+  margin-right: .5em;
+  vertical-align: central;
+}

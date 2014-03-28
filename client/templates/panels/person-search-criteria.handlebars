@@ -1,0 +1,10 @@
+<p class="criteria" data-criteria="criteria-{{id}}">
+  <label for="key-{{id}}">Nom de champ</label>
+  <input type="text" id="key-{{id}}" data-field="key" list="fields" placeholder="Tous les types de champs" />
+  <label for="value-{{id}}">Valeur</label>
+  <input type="text" id="value-{{id}}" data-field="value" placeholder="Saisissez la valeur"/>
+  {{#if removable}}
+    <img src="icons/16/cross.png" alt="Supprimer le critère" data-action="remove-criteria" data-criteria="criteria-{{id}}" />
+  {{/if}}
+</p>
+
